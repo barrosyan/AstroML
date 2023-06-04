@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AstroML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-vYFonxXVW+iP8MgjW1vVzjEPddCkF4yWx+Nkgq9ATv2C2yjXCHAZAlMLURk92Alw1o73Y9wMMwDeUy8vNm8HSw==" crossorigin="anonymous" />
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            font-family: "Roboto", sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .input-field {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 18px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #cccccc;
+        }
+        
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .instruction-section {
+            margin-top: 40px;
+        }
+        
+        .instruction-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .instruction-description {
+            font-size: 14px;
+            color: #ffd966;
+        }
+        
+        .separator {
+            margin: 40px 0;
+            border: none;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .section-container {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .architecture-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .architecture-image {
+            width: 113%;
+            height: auto;
+            margin-bottom: 0px;
+        }
+
+        .graphics-section {
+            margin-top: 20px;
+        }
+
+        .graphics-image {
+            width: 120%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AstroML</h1>
+        
+        <div class="input-container">
+            <input class="input-field" type="file">
+            <button class="button" type="button"><i class="fas fa-upload"></i> Classify Galaxy!</button>
+        </div>
+        
+        <div class="instruction-section">
+            <p class="instruction-text">Instructions:</p>
+            <p class="instruction-description">Upload a photo of a galaxy using the input field above. Click the "Classify Galaxy!" button to analyze the galaxy image using the CNN model. The CNN model will classify the galaxy and provide information and analysis of the galaxy based on the uploaded photo.</p>
+        </div>
+        
+        <hr class="separator">
+
+        <div class="section-container">
+            <h2 class="section-title">CNN Model</h2>
+            <div class="section-description">
+                <div class="architecture-section">
+                    <div>
+                        <h3>Architecture</h3>
+                        <img class="architecture-image" src="https://i.ibb.co/jDgH6kF/cnn.png" alt="CNN Architecture">
+                    </div>
+                    <div>
+                        <h3>Classification Parameters</h3>
+                        <div class="examples-section">
+                            <img class="example-image" src="https://earthhow.com/wp-content/uploads/2018/08/Hubble-Galaxy-Classification-678x378.png" alt="https://earthhow.com/galaxy-types/">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

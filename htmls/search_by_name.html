@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search by Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-vYFonxXVW+iP8MgjW1vVzjEPddCkF4yWx+Nkgq9ATv2C2yjXCHAZAlMLURk92Alw1o73Y9wMMwDeUy8vNm8HSw==" crossorigin="anonymous" />
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            font-family: "Roboto", sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .input-field {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 18px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #cccccc;
+        }
+        
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .instruction-section {
+            margin-top: 40px;
+        }
+        
+        .instruction-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .instruction-description {
+            font-size: 16px;
+            color: #ffff99; /* Yellow text color */
+        }
+        
+        .modal-button {
+            margin-top: 20px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 20% auto;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #aaaaaa;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search by Name</h1>
+        
+        <div class="input-container">
+            <input class="input-field" type="text" placeholder="Enter galaxy name">
+            <button class="button" type="button"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div class="instruction-section">
+            <p class="instruction-text">Instructions:</p>
+            <p class="instruction-description" style="color: #ffff99;">Enter the name of the galaxy you want to search for in the input field above. Click the "Search" button to find the desired galaxy. The search results will display images, references, and information about the galaxies.</p>
+        </div>
+
+        <div class="modal-button">
+            <button class="button" onclick="openModal()"><i class="fas fa-list"></i> List of Galaxies</button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>List of Galaxies</h2>
+                <!-- Add the list of galaxies here -->
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("modal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("modal").style.display = "none";
+            }
+        </script>
+    </div>
+</body>
+</html>
