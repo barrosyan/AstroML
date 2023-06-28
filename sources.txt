@@ -1,4 +1,5 @@
 https://earth.google.com
+https://www.splus.iag.usp.br/
 http://images-api.nasa.gov/search?q=galaxies&page=1
 http://images-assets.nasa.gov/image/PIA04921/PIA04921~orig.jpg
 http://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg
@@ -39,7 +40,7 @@ http://images-assets.nasa.gov/image/PIA15656/PIA15656~large.jpg
 http://images-assets.nasa.gov/image/PIA15656/PIA15656~medium.jpg
 http://images-assets.nasa.gov/image/PIA15656/PIA15656~small.jpg
 http://images-assets.nasa.gov/image/PIA15656/PIA15656~thumb.jpg
-http://images-assets.nasa.gov/image/PIA15656/metadata.json
+http://images-assets.nasa.gov/image/PIA15v656/metadata.json
 https://images-assets.nasa.gov/image/PIA15656/PIA15656~thumb.jpg
 http://images-assets.nasa.gov/image/PIA04629/PIA04629~orig.jpg
 http://images-assets.nasa.gov/image/PIA04629/PIA04629~small.jpg
