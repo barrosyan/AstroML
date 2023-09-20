@@ -1,0 +1,20 @@
+# Common Python libraries
+numpy==1.18.2
+pandas==1.0.3
+matplotlib==3.2.1
+requests==2.23.0
+
+# Web development
+flask==1.1.2
+
+# Machine learning and deep learning
+tensorflow==2.4.1
+keras==2.4.3
+keras-tuner==1.0.2
+
+# Image processing
+opencv-python==4.2.0.32
+
+# Pygame and OpenGL
+pygame==1.9.6
+PyOpenGL==3.1.5
